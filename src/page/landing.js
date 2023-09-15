@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import Hero from "../components/hero"
 import MovieCard from '../components/MovieCard';
 import chevron from '../../src/pictures/Chevron right.png'
+import Footer from "../page/footer";
 
 const API_URL = "https://api.themoviedb.org/3/movie/popular?api_key=a7cd20e347b0e4fa05353b86231ba11b";
 
 const Landing = () => {
     const [movies, setMovies] = useState([]);
-
+    const SlicedMovie = movies.slice(0, 10);
+    
     useEffect(() => {
       fetch(API_URL)
         .then((res) => res.json())
@@ -27,7 +29,7 @@ const Landing = () => {
                 <p>See more <img src={chevron}></img></p>
                 </div>
                 <div className="grid">
-                {movies.map((movie) => (
+                {SlicedMovie.map((movie) => (
                     <div key={movie.id} className="col-md-4">
                     <MovieCard
                         id={movie.id}
@@ -38,8 +40,12 @@ const Landing = () => {
                         overview={movie.overview}
                     />
                     </div>
+                     
                 ))}
                 </div>
+                <Footer
+                    
+                     />
             </div>
         </>
     )

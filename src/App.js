@@ -7,6 +7,7 @@ import Landing from './page/landing';
 import Nopage from './page/nopage';
 import Movie from './page/movie';
 
+
 function App() {
 
   return (

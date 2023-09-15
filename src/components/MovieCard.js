@@ -10,9 +10,9 @@ const MovieCard =({id, title, poster_path, vote_average,release_date, overview})
     <><Link to={`/movies/${id}`} className="card text-center" data-testid="movie-card">
         <div className="card style ">
           <img className="card-img-top" src={API_IMG+poster_path} />
-          <div className="">
-            <div>
-            <h5 data-testid="movie-title">{title}</h5>
+          <div>
+            <div className="">
+            <p data-testid="movie-title">{title}</p>
             <p data-testid="movie-release-date">Release Date: {release_date}</p>
               <div className="d-flex flex-row ms-0 ">
           <img className="ps-0 pe-1 imdb" src = {imbd} alt="imbd" />
@@ -35,6 +35,7 @@ const MovieCard =({id, title, poster_path, vote_average,release_date, overview})
         {/* <img src={API_IMG+poster_path} alt={`Movie Poster for ${title}`} data-testid="movie-poster"></img> */}
         {/* <p data-testid="movie-release-date">Release Date: {release_date}</p> */}
         {/* <p>{overview}</p> */}
+        
     </Link> 
 
 

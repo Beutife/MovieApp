@@ -91,8 +91,12 @@ const Section = ({ title, poster_path, release_date, overview, id }) => {
         </div>
           <p data-testid="movie-overview">{details.overview}</p>
           <h2 data-testid="movie-title">{details.title}</h2>
-          <p  className = "release-date" data-testid="movie-release-date">Release Date: {details.release_date}</p>
-          <p className = "time" data-testid="movie-runtime">Run Time: {details.release_date}</p>
+          <p  className = "release-date"> Release Date: 
+           <span data-testid="movie-release-date"> {details.release_date}</span> </p>
+           <p className="time">
+  <span data-testid="movie-runtime">{details.runtime} minutes</span>
+</p>
+
         </div>
       </div>
     </main>
