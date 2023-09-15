@@ -1,0 +1,27 @@
+
+.section-head{
+    padding: 5px;
+
+}
+.section-list ul{
+    list-style: none;
+    display: inline;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.section-list ul li{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.section-list li a{
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+.mini-note{
+    margin-top: 10rem;
+}
