@@ -10,7 +10,7 @@ import play from '../pictures/Play (1).png';
 
 const Hero = () => {
   return (
-    <div className="body-bg w-100 h-100 w-md-75">
+    <div className="body-bg  h-100 ">
       <div className="container">
           <div className="header justify-content-between pt-4">
               <div className="d-flex flex-row justify-content-around">
