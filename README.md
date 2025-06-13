@@ -1,11 +1,3 @@
-API_URL ="https://api.themoviedb.org/3/movie/popular?api_key=a7cd20e347b0e4fa05353b86231ba11b"
-API_IMG="https://image.tmdb.org/t/p/w500/"
-API_SEARCH="https://api.themoviedb.org/3/search/movie?api_key=a7cd20e347b0e4fa05353b86231ba11b&query"
-📌API_URL="https://api.themoviedb.org/3/movie/popular?api_key=a7cd20e347b0e4fa05353b86231ba11b"
-
-📌API_IMG="https://image.tmdb.org/t/p/w500/"
-
-📌API_SEARCH="https://api.themoviedb.org/3/search/movie?api_key=a7cd20e347b0e4fa05353b86231ba11b&query"#
 
 Objective
 Create a movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies. You’ll be consuming data from the TMDB API.
